@@ -20,6 +20,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
@@ -265,7 +266,9 @@ section[data-testid="stSidebar"] {
     50%       { box-shadow: 0 0 0 8px rgba(239,68,68,0); }
 }
 
-#MainMenu, footer, header { visibility: hidden; }
+section[data-testid="stSidebar"] {
+    display: block !important;
+}
 .stDeployButton { display: none; }
 </style>
 """, unsafe_allow_html=True)
